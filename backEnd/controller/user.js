@@ -47,8 +47,8 @@ router.post(
           url: fileUrl,
         },
       });
-  
-      res.status(201).json({ success: true, user});
+      console.log(user);
+      res.status(201).json({ success: true, user, message: "User created successfully"});
     })
   );
 
