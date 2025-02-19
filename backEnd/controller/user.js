@@ -5,7 +5,7 @@ const User = require("../model/user");
 const router = express.Router();
 const { upload } = require("../multer");
 const ErrorHandler = require("../utils/ErrorHandler");
-const catchAsyncErrors = require("../middleware/catchAsyncError");
+const catchAsyncErrors = require("../middleware/catchAsynError");
 // const jwt = require("jsonwebtoken");
 // const sendMail = require("../utils/sendMail");
 const bcrypt = require("bcryptjs");
@@ -47,8 +47,8 @@ router.post(
           url: fileUrl,
         },
       });
-      console.log(user);
-      res.status(201).json({ success: true, user, message: "User created successfully"});
+  
+      res.status(201).json({ success: true, user});
     })
   );
 
@@ -73,5 +73,27 @@ router.post(
         success: true,
         user,
     });
+}));
+
+
+router.get("/profile", catchAsyncErrors(async (req, res, next) => {
+  const { email } = req.query;
+  if (!email) {
+      return next(new ErrorHandler("Please provide an email", 400));
+  }
+  const user = await User.findOne({ email });
+  if (!user) {
+      return next(new ErrorHandler("User not found", 404));
+  }
+  res.status(200).json({
+      success: true,
+      user: {
+          name: user.name,
+          email: user.email,
+          phoneNumber: user.phoneNumber,
+          avatarUrl: user.avatar.url
+      },
+      addresses: user.addresses,
+  });
 }));
 module.exports = router;

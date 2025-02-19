@@ -149,3 +149,36 @@ In this milestone, we created a navigation bar on the homepage where we can see 
 In this milestone, we updated our product detail file so that we can access more information about our product.
 
 
+# Milestone 17: Cart Functionality
+
+Overview:-
+
+This milestone involves adding a cart feature to the user schema and implementing an endpoint to store product details in the cart.
+
+Changes Made:
+
+Cart Schema:
+
+Added a Cart schema to store products associated with the user.
+Each product contains a productId (referencing the Product model) and quantity.
+Endpoint for Adding Products to Cart:
+
+Created a POST endpoint /api/cart/add to receive product details (e.g., product ID and quantity).
+The product details are stored in the cart associated with the user in the database.
+
+# Milestone 18: Cart Functionality Update
+Overview:-
+
+In this milestone, we have added two key backend endpoints to handle cart functionalities:
+
+1. Adding products to the cart via a POST request.
+2. Fetching all products inside a user's cart using their email.
+
+# Milestone 19 - Cart Page & Quantity Control
+
+Welcome to *Milestone 19* of our project! 🎉 In this milestone, we focused on creating the frontend for the cart page, allowing users to view products and manage quantities directly within the cart. Additionally, we developed backend endpoints to handle increasing and decreasing product quantities.
+
+
+# Milestone 20 - Profile Page & User Data Display
+
+Welcome to *Milestone 20* of our project! 🌟 In this milestone, we focused on creating a user profile page where we can display all the user data fetched from the backend. Additionally, we developed an API endpoint to send user data, which includes details like name, profile photo, email, and addresses.
