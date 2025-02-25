@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 const Cart = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:7000/api/v2/product/cartproducts?email=${'parthsarawgi18@gmail.com'}`)
+        fetch(`http://localhost:7000/api/v2/product/cartproducts?email=${'tanvi@gmail.com'}`)
           .then((res) => {
             if (!res.ok) {
               throw new Error(`HTTP error! status: ${res.status}`);
