@@ -93,12 +93,12 @@ Response: Success with a token, or error for invalid credentials.
 
  ## Milestone 8: Product Card Component 🌟
 
-In this milestone, we focus on creating a **reusable product card component** for your e-commerce app. The goal is to showcase product details (e.g., name, image, price) in a visually appealing way, making it easy for users to browse products.
+In this milestone, we focus on creating a *reusable product card component* for your e-commerce app. The goal is to showcase product details (e.g., name, image, price) in a visually appealing way, making it easy for users to browse products.
 
 #### Steps Completed:
-1. **Card Component**: Designed a reusable card that accepts product details as props.
-2. **Homepage Layout**: Implemented a grid/flexbox layout to display multiple cards neatly.
-3. **Dynamic Rendering**: Used array mapping to dynamically render cards for each product.
+1. *Card Component*: Designed a reusable card that accepts product details as props.
+2. *Homepage Layout*: Implemented a grid/flexbox layout to display multiple cards neatly.
+3. *Dynamic Rendering*: Used array mapping to dynamically render cards for each product.
 
 #### Next Steps:
 In the next milestone, we’ll add features like filtering and sorting. Keep up the great work! 🚀
@@ -131,23 +131,23 @@ Welcome to Milestone 12! 🌟
 
 In this milestone, we will build a "My Products" page that will display all the products added by a specific user. We will write an endpoint to filter products based on the user's email and send that data to the frontend. The data will be fetched dynamically and displayed using the Product Card component created earlier.
 
-# Milestone 13 - Updating the product
+# Milestone 13: Product Editing Functionality
 
-This Express.js route updates a product in a MongoDB database, handling file uploads using multer. It validates input data, updates product details (name, description, category, tags, price, stock, email), and modifies images if new ones are uploaded. Errors are handled with appropriate status codes, ensuring robust error management and smooth database updates.
+## Overview 🌟
 
-# Milestone 14 - Delete the product
+In this milestone, we focus on implementing functionality to allow users to edit the details of previously uploaded products. This includes creating a backend endpoint to update existing data in MongoDB and modifying the frontend to auto-fill the form with existing product details, giving the user the option to edit and save the new data.
 
-This e-commerce application is built with Node.js, Express, MongoDB, and React, providing full-stack functionality for product management. It includes RESTful APIs for adding, updating, and deleting products. The /delete-product/:id endpoint allows secure product removal. Error handling ensures reliability. Ideal for scalable and dynamic online stores. 
+## Milestone 14 - Adding Product Deletion Functionality
 
+In this milestone, we focus on implementing functionality to allow users to delete the details of previously uploaded products. 
 
-# Milestone 15
+# Milestone 15: Navbar Component Creation and Navigation
 
-In this milestone, we created a navigation bar on the homepage where we can see "My Products," "Add Product," and "Cart."
+Welcome to Milestone 15! In this milestone, we will learn how to create a Navbar component and add it to all screens in our application. The main goal is to make the navigation seamless and responsive across multiple pages.
 
-# Milestone 16
+# Milestone 16: Product Info Page and Add to Cart Functionality
 
-In this milestone, we updated our product detail file so that we can access more information about our product.
-
+Welcome to Milestone 16! In this milestone, we will focus on creating a product info page that displays detailed product data. We will also implement a feature that allows the user to select a quantity and add the product to the cart.
 
 # Milestone 17: Cart Functionality
 
@@ -176,23 +176,21 @@ In this milestone, we have added two key backend endpoints to handle cart functi
 
 # Milestone 19 - Cart Page & Quantity Control
 
-Welcome to *Milestone 19* of our project! 🎉 In this milestone, we focused on creating the frontend for the cart page, allowing users to view products and manage quantities directly within the cart. Additionally, we developed backend endpoints to handle increasing and decreasing product quantities.
-
+Welcome to Milestone 19 of our project! 🎉 In this milestone, we focused on creating the frontend for the cart page, allowing users to view products and manage quantities directly within the cart. Additionally, we developed backend endpoints to handle increasing and decreasing product quantities.
 
 # Milestone 20 - Profile Page & User Data Display
 
-Welcome to *Milestone 20* of our project! 🌟 In this milestone, we focused on creating a user profile page where we can display all the user data fetched from the backend. Additionally, we developed an API endpoint to send user data, which includes details like name, profile photo, email, and addresses.
+Welcome to Milestone 20 of our project! 🌟 In this milestone, we focused on creating a user profile page where we can display all the user data fetched from the backend. Additionally, we developed an API endpoint to send user data, which includes details like name, profile photo, email, and addresses.
+
+# Milestone 21: Address Form Frontend
 
 
-# Milestone 21 : Adding Address colum to the profile page
+Welcome to Milestone 21! In this milestone, we will create a frontend page form to input address details such as country, city, address1, address2, zip code, and address type. This form will be part of the profile page and allow users to add their address easily.
 
-In this milestone we create a "createAddress.jsx" file in pages folder where we write the code for add address button to make it functional and will send us to the add address page.
+# Milestone 22: Backend Endpoint for Storing Address in User Profile
 
 
-# Milestone 22 - Save Address in User Profile
-
-Welcome to Milestone 22 of our project! 🎉 In this milestone, we focused on creating a backend endpoint that allows users to save their address directly into their user profile. We developed the necessary endpoint to receive the address from the frontend and update the user’s profile in the database by adding the address to the user’s address array.
-
+Welcome to Milestone 22! In this milestone, we will focus on creating a backend endpoint that will receive the address data from the frontend form and save it in the user profile in the database. This step will allow users to have their address data stored and linked to their profile.
 
 # Milestone 23: Place Order Functionality
 
@@ -200,17 +198,17 @@ Welcome to Milestone 23! In this milestone, we focused on implementing the "Plac
 
 # Milestone 24: Order Confirmation Page
 
-Welcome to Milestone 24! In this milestone, we focused on creating the "Order Confirmation" page, where we display the products being ordered, the selected delivery address, and the total price of the cart. This step is essential in the checkout process and helps users review their order before finalizing the purchase.
+Welcome to Milestone 24! In this milestone, we focused on creating the "Order Confirmation" page, where we display the products being ordered, the selected delivery address, and the total price of the cart. This step is essential in the checkout process and helps users review their order before finalizing the purchase.
 
 # Milestone 25: Place Order Endpoint
 
-Welcome to Milestone 25! 🎉
+Welcome to Milestone 25! 
 
 In this milestone, we focus on creating a backend endpoint to place an order. This involves setting up an API endpoint that will allow users to place orders by providing product, user, and address details.
 
 # Milestone 26: Get User Orders Endpoint
 
-Welcome to Milestone 26! 🎉
+Welcome to Milestone 26! 
 
 In this milestone, we focus on creating a backend endpoint to retrieve all orders placed by a user. This involves setting up an API endpoint that allows users to fetch all their previous orders based on their email.
 
@@ -225,3 +223,19 @@ In this milestone, we focused on creating the frontend page that displays all us
 Welcome to Milestone 28!
 
  In this milestone, we focused on adding a cancel order feature to the my-orders page and creating a backend endpoint for handling order cancellations.
+
+# Milestone 29: Integrating PayPal Payment Gateway
+
+## Overview 🌟
+
+Welcome to Milestone 29 of the project! In this milestone, we are learning how to integrate the PayPal API to enable online payments in our application.
+
+# Milestone 30: PayPal Integration
+
+## Overview
+
+In this milestone, we learned how to integrate an *online payment gateway* into our React application using the *PayPal API*. This milestone is a continuation of Milestone 29, where we set up a PayPal account and obtained the user ID in the sandbox environment.
+
+# Milestone 31: Implementing Global State Management with Redux
+
+Welcome to Milestone 31! 🎯 In this milestone, we focus on implementing global state management using Redux in a React application. By the end of this milestone, you will learn how to use Redux for managing global states like storing a user's email across various components.
